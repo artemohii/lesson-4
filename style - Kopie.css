@@ -1,0 +1,133 @@
+/*variable*/
+:root {
+    --primary-color: #000000;
+    --white-color: #fff;
+    --gray-color: #6B6868;
+}/*reset*/
+* {
+    box-sizing: border-box;
+}
+a{
+    color: var(--primary-color);
+    text-decoration: none;
+}
+/*body*/
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: #F5F5F5;
+    color: var(--primary-color);
+    padding-top: 200px;
+    cursor: default;
+}
+/*h1, p*/
+h1, p {
+    margin: 0;
+}
+/*main*/
+main {
+    display: flex;
+    justify-content: space-around;
+}
+/*container*/
+.container {
+    max-width: 1512px;
+    width: 100%;
+    margin-inline: auto;
+    /*можно ли писать 
+    margin: 0 auto; вместо margin-inline: auto; ???
+    */
+    background: var(--white-color);
+    padding: 80px;
+}
+/*nav*/
+.nav {
+    margin: 60px 0 128px;
+}
+/*ul*/
+.ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+/*li*/
+.li {
+    list-style: none;
+}
+/*link*/
+.link {
+    display: block;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    padding: 20px;
+    border-bottom: 1px solid transparent;
+}
+.link:hover{
+    border-bottom: 1px solid var(--primary-color);
+}
+/*info*/
+.info {
+    max-width: 800px;
+}
+/*title*/
+.title {
+    margin-bottom: 40px;
+}
+.title, h1 {
+    font-weight: 700;
+    font-size: 87px;
+    line-height: 90px;
+}
+.title-name{
+    display: flex;
+    gap: 10px;
+}
+/*description*/
+.description {
+    font-weight: 500;
+    font-size: 29px;
+    line-height: 45px;
+    color: var(--gray-color);
+    margin-bottom: 52px;
+}
+/*links*/
+.links {
+    display: flex;
+    gap: 38px;
+}
+.links a{
+    display: inline-block;
+    padding: 30px 50px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+.links a:first-of-type {
+    border: 2px solid var(--primary-color);
+    background: var(--white-color);
+    color: var(--primary-color);
+}
+.links a:last-of-type {
+    background: var(--primary-color);
+    color: var(--white-color);
+}
+.links a:hover {
+    background: var(--gray-color);
+    color: var(--white-color);
+}
+.links a:last-of-type:hover {
+    padding: 28px 48px;/*можно ли не переписывать padding?*/
+    border: 2px solid var(--primary-color);
+}
+/*photo*/
+.photo {
+    max-width: 500px; /*почему картинка меньше по размеру, чем была на лекции ?
+    становится такой же примерно если width: 1000px */
+}
+.photo img{
+    max-width: 100%;
+    height: auto;
+}
