@@ -1,0 +1,144 @@
+/*reset*/
+* {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+::-webkit-scrollbar {
+    width: 0;
+}
+/*html body*/
+body {
+    margin: 0;
+    padding: 100px;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(124.53deg, #FC3F5F 0%, #7D61FF 100.32%);
+    cursor: default;
+}
+/*container*/
+.container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    height: 1010px;
+    background: linear-gradient(180deg, rgba(43, 34, 21, 0.8) -1.22%, #22282E 101.33%);
+    box-shadow: 0px 0px 250px rgba(0, 0, 0, 0.3);
+    border-radius: 32px;
+}
+/*header*/
+header {
+    padding: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    /*justify-content: space-between;*/
+    align-items: center;
+}
+/*logo*/
+header .header_logo, .header_download{
+    /*min-width: 180px;*/
+    flex-basis: 180px;
+}
+header .header_logo {
+    flex-grow: 1;
+}
+/*nav*/
+header nav {
+    flex-grow: 1;
+}
+header nav ul {
+    display: flex;
+    gap: 65px;
+}
+header nav li {
+
+}
+header nav a {
+    display: block;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    color: #A0A3A7;
+}
+header nav a:hover {
+    color: #d3d8dc;
+}
+/*header_download , header_btn*/
+header .header_download{
+    text-align: right;
+}
+header .header_btn {
+    display: block;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    color: #24282E;
+    padding: 16px 24px;
+    background: linear-gradient(93.22deg, #E1E1E1 8.37%, #FFFFFF 99.95%);
+    box-shadow: 0px 4px 50px rgba(37, 37, 37, 0.08), inset 1px 1px 1px rgba(135, 135, 135, 0.32);
+    border-radius: 999px;
+}
+header .header_btn:hover {
+    background: #d3d8dc;
+}
+/*header end*/
+
+
+/*main*/
+main {
+    padding: 180px 20px 161px;
+    text-align: center;
+}
+main h1{
+    max-width: 600px;
+    width: 100%;
+    margin: 0;
+    margin-inline: auto;
+    /*margin: 0 auto; можно ли писать так вместо margin-inline: auto; ???*/
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 108px;
+    color: #F2F4F7;
+    margin-bottom: 32px;
+}
+main p {
+    max-width: 600px;
+    width: 100%;
+    margin: 0;
+    margin-inline: auto;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    color: #F2F4F7;
+    margin-bottom: 80px;
+}
+main a {
+    display: inline-block;
+    border: 2px solid #FC40F4;
+    border-radius: 999px;
+    padding: 16px 32px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #FC40F4;
+    min-width: 240px;
+    margin-bottom: 64px;
+    transition: .3s;
+}
+main a:hover {
+    background: linear-gradient(124.53deg, #FC3F5F 0%, #7D61FF 100.32%);
+    color: #F2F4F7;
+}
+/*main circle*/
+main .main_circle {
+    display: flex;
+    gap: 32px;
+    padding: 16px;
+    justify-content: center;
+}
+/*main end*/
+
