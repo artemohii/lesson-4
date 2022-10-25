@@ -8,30 +8,35 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Lesson_4</title>
 </head>
 <body>
     <div class="container">
-        <header>
-            <div class="header_logo">
+        <header class="header">
+            <div class="header__logo">
                 <img src="./img/apple.svg" alt="Apple">
             </div>
-            <nav>
+            <label for="menu">
+                <span class="material-icons">menu</span>
+            </label>
+            <input type="checkbox" name="" id="menu">
+            <nav class="header__nav">
                 <ul>
                     <li><a href="#">Features</a></li>
                     <li><a href="#">Partners</a></li>
                     <li><a href="#">Stories</a></li>
                 </ul>
             </nav>
-            <div class="header_download">
-                <a href="#" class="header_btn">Download for free</a>
+            <div class="header__download">
+                <a href="#" class="header__btn">Download for free</a>
             </div>
         </header>
-        <main>
-            <h1>The Power of Simplicity</h1>
-            <p>Instead of spending time searching for the right app, our AI will bring the right app to you.</p>
-            <a href="#">Learn</a>
-            <div class="main_circle">
+        <main class="main">
+            <h1 class="main__title">The Power of Simplicity</h1>
+            <p class="main__description">Instead of spending time searching for the right app, our AI will bring the right app to you.</p>
+            <a href="#" class="main__btn">Learn</a>
+            <div class="main__circle">
                 <img src="./img/circle.svg" alt="circle">
                 <img src="./img/circle.svg" alt="circle">
                 <img src="./img/circle_2.svg" alt="circle">
