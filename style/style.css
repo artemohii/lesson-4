@@ -33,7 +33,9 @@ body {
 .header{
     padding: 35px;
     display: flex;
+    /*
     flex-wrap: wrap;
+    */
     justify-content: space-between;
     align-items: center;
 }
@@ -64,13 +66,18 @@ header nav li {
 header .header__nav a {
     display: block;
     font-weight: 300;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 21px;
     color: #A0A3A7;
+    padding: 10px;
+    border-bottom: 1px solid transparent;
 }
 header .header__nav a:hover {
     color: #d3d8dc;
+    /*
     text-decoration: underline;
+    */
+    border-bottom: 1px solid #A0A3A7;
 }
 /*header_download , header_btn*/
 header .header__download {
@@ -83,7 +90,7 @@ header .header__btn {
     line-height: 21px;
     color: #24282E;
     padding: 16px 24px;
-    background: linear-gradient(93.22deg, #E1E1E1 8.37%, #FFFFFF 99.95%);
+    background: #E1E1E1 /*  linear-gradient(93.22deg, #E1E1E1 8.37%, #FFFFFF 99.95%)*/;
     box-shadow: 0px 4px 50px rgba(37, 37, 37, 0.08), inset 1px 1px 1px rgba(135, 135, 135, 0.32);
     border-radius: 999px;
 }
@@ -104,7 +111,7 @@ main .main__title{
     width: 100%;
     margin: 0;
     margin-inline: auto;
-    /*margin: 0 auto; можно ли писать так вместо margin-inline: auto; ???*/
+    /*margin: 0 auto; */
     font-weight: 400;
     font-size: 72px;
     line-height: 108px;
@@ -178,12 +185,15 @@ input, label {
         line-height: 21px;
     }
 }
-@media (max-width: 700px) {
+@media (max-width: 800px) {
     body {
         padding: 20px;
     }
     .header .material-icons, label {
         display: block;
+    }
+    .header .close {
+        display: none;
     }
     .header__nav {
         text-align: center;
@@ -200,9 +210,17 @@ input, label {
     .header__nav ul {
         flex-direction: column;
     }
+    main .main__title {
+        font-size: 42px;
+        line-height: 78px;
+    }
 }
-
-
 input:checked~.header__nav {
     transform: translateX(0);
+}
+input:checked+label .menu {
+    display: none;
+}
+input:checked+label .close{
+    display: block;
 }
